@@ -4,13 +4,10 @@ You should create your own direcory inside Streams_tasks direcory with your user
 
 
 All questions below you should solve using streams, lyambdas and method references.
-
-Ունեք Person class որը իր մեջ ունի name դաշտ, և ունեք Person-ների List տպեք այն բոլոր Person-ներին որոնց անվան առաջին տառը սկսվում է 'A' տառով։
-1:16
-2. Ունեք Person class որը իր մեջ ունի name դաշտ, և ունեք Person-ների List տպեք քանակը թե քանի Person-ն կա որոնց անվան առաջին տառը սկսվում է 'A' տառով։
-1:17
-3. Տպեք 1 ից 10 թվերը
-1:20
-4. Հաշվել 4-ից 10 թվերի գումարը և տպել
-1:21
-5. Գրեք ֆունկցիա որը ստանում է integer-ների զանգված սորտավորում է այն և տպում առաջին էլեմենտը եթե այն գոյություն ունի (զանգվածը կարող է լինել դատարկ) (edited) 
+Task 1: You have a Person class which has a name field inside it. You are given List of Persons.
+     1.1 Print all Persons whose names start with latter 'A'.
+     1.2 Print number of Persons whose names start with latter 'A'.
+Task 2: Print numbers from 1 to 10.
+Task 3: Print sum of numbers from 4 to 10.
+Task 4: Write a function with printSortedFirst name which gives as a parameter List of String.
+        Inside function sort the List after prints first element if it exists(Note that List can be empty)
