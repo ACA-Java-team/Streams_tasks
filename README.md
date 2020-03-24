@@ -1,11 +1,12 @@
 # Streams_tasks
 In this repository you should upload your homeworks connected with Streams. <br />
-**You should create your own direcory inside Streams_tasks direcory with your username(first later of name then lastname for example mine is gharutyunyan) then add your projects there. <br />
-When you solved task number 4 then your project name should be task_4(for example if I solved task number 4 I will create in Streams_tasks/gharutyunyan/task_4 directory and will add all relevant files there)**  
+**There are two important rules you should follow in this repository**
+1. You should create your own directory inside Streams_tasks directory with your username. For example mine is gharutyunyan.
+2. When you solved task number 4 then your project name should be task_4. For example if I solved task number 4 I will create in Streams_tasks/gharutyunyan/task_4 directory and will add all relevant files there.
 
 
 All questions below you should solve using **streams**, **lyambdas** and **method references**.
-- Task 1: You have a Person class which has a name field inside it. You are given List of Persons.
+- Task 1: You have a Person class which has a "name" field. You are given List of Persons.
     - 1.1 Print all Persons whose names start with latter 'A'.
     - 1.2 Print number of Persons whose names start with latter 'A'.
 - Task 2: Print numbers from 1 to 10.
