@@ -1,5 +1,5 @@
 # Streams_tasks
-In this repository you should upload your homeworks connected with Streams. You can find tasks from README file. <br />
+In this repository you should upload your homeworks connected with Streams. <br />
 **You should create your own direcory inside Streams_tasks direcory with your username(first later of name then lastname for example mine is gharutyunyan) then add your projects there. <br />
 When you solved task number 4 then your project name should be task_4(for example if I solved task number 4 I will create in Streams_tasks/gharutyunyan/task_4 directory and will add all relevant files there)**  
 
