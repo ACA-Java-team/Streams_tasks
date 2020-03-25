@@ -11,5 +11,6 @@ All questions below you should solve using **streams**, **lyambdas** and **metho
     - 1.2 Print number of Persons whose names start with latter 'A'.
 - Task 2: Print numbers from 1 to 10.
 - Task 3: Print sum of numbers from 4 to 10.
-- Task 4: Write a function with printSortedFirst name which gives as a parameter List of String.
-        Inside function sort the List after prints first element if it exists(Note List can be empty!)
+- Task 4: Write a function with which get as a parameter List of String.
+    - 4.1 Inside function sort the List after print first element if it exists(Note List can be empty!)
+    - 4.2 Inside function filter all string whose starts with latter 'A' then sort them, then print.
