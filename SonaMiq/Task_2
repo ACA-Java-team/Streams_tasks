@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+    public class Task1 {
+
+    public static void main(String[] args) {
+        List<Person> persons=new ArrayList<>();
+        persons.add(new Person("Sona"));
+        persons.add(new Person("Arman"));
+        persons.add(new Person("Anna"));
+        persons.add(new Person("Yelena"));
+        persons.add(new Person("Valeri"));
+        persons.add(new Person("Aram"));
+
+        Stream<Person> personStream=persons.stream();
+        Stream<Person> startWithA=personStream.sorted().filter((person)->person.name.startsWith("A"));
+        startWithA.forEach(person -> System.out.println(person.name));
+        personStream=persons.stream();//stream is closed and we need create stream again
+        startWithA=personStream.sorted().filter((person -> person.name.startsWith("A")));
+        System.out.println(startWithA.count());
+    }
+}
+
+public class Person implements Comparable {
+        String name;
+
+        Person(String name) {
+            this.name = name;
+        }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
+}
