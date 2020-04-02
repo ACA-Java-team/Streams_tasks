@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -25,7 +24,7 @@ public class Person {
 
         Stream<Person> stream = personList.stream();
 
-        stream.filter(s -> (s.name.charAt(0))=='A').forEach(s-> System.out.println(s.name));
+        System.out.println(stream.filter(s -> (s.name.charAt(0)) == 'A').count());
 
     }
 }
