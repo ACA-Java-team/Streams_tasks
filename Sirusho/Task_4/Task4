@@ -1,0 +1,36 @@
+package Second.GithubTasks;
+
+import java.util.Arrays;
+import java.util.List;
+//Write a function with which get as a parameter List of String.
+//4.1 Inside function sort the List,then print first element if it exists(Note List can be empty!)
+//4.2 Inside function filter all string whose names start with letter 'A' then sort them, then print.
+
+public class Task4 {
+    public static void SortAndPrint(List<String> list) {
+        list
+                .stream()
+                .filter(x -> x.startsWith("A"))
+                .sorted()
+                .forEach(System.out::println);
+    }
+
+    public static void SortAndPrintFirst(List<String> list) {
+        list
+                .stream()
+                .sorted();
+        if (list.get(0) != null) {
+            System.out.println(list.get(0));
+        } else {
+            System.out.println("The list is empty");
+        }
+    }
+
+    public static void main(String[] args) {
+        List<String> list = Arrays.asList("Anny", "Mary", "Alice", "John", "Arthur");
+        System.out.println("Sorted Names which start with letter A");
+        SortAndPrint(list);
+        System.out.println("Sorted list's first name");
+        SortAndPrintFirst(list);
+    }
+}
