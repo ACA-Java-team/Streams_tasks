@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Person {
+    private String name;
+
+    Person(String name) {
+        this.name = name;
+    }
+
+
+    public static void main(String[] args) {
+        List<Person> personList = new ArrayList<>();
+
+        personList.add(new Person("Anna"));
+        personList.add(new Person("Jon"));
+        personList.add(new Person("Aram"));
+        personList.add(new Person("Vahan"));
+        personList.add(new Person("Edgar"));
+        personList.add(new Person("Artur"));
+        personList.add(new Person("Elena"));
+
+
+        Stream<Person> stream = personList.stream();
+
+        stream.filter(s -> (s.name.substring(0,1).equals("A"))).forEach(s -> System.out.println(s.name));
+
+        Stream<Person> stream1 = personList.stream();
+
+        System.out.println(stream1.filter(s -> (s.name.substring(0,1).equals("A"))).count());
+
+    }
+}
