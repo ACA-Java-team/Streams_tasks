@@ -1,1 +1,45 @@
+//Task 1: You have a Person class which has a "name" field. You are given List of Persons.
+//1.1 Print all Persons whose names start with letter 'A'.
+//1.2 Print number of Persons whose names start with letter 'A'.
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Task1 {
+    @FunctionalInterface
+    interface InterfaceF {
+        void show(Integer i, String s);
+    }
+
+    static class Person {
+
+        String name;
+
+        Person(String name) {
+            this.name = name;
+        }
+
+        public String toString() {
+            return name;
+        }
+
+    }
+
+    public static void main(String[] args) {
+        List<Person> list = Arrays.asList(
+                new Person("Mary"),
+                new Person("Anny"),
+                new Person("Alice"),
+                new Person("John"),
+                new Person("Arthur"));
+        list
+                .stream()
+                .filter(x -> x.name.startsWith("A"))
+                .forEach(System.out::println);
+        int countA = (int) list.stream().filter(x -> x.name.startsWith("A")).count();
+        System.out.println("count=" + countA);
+
+    }
+}
+
 
